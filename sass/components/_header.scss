@@ -1,0 +1,131 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    color: $main-color;
+    background-color: $bg-color;
+    width: 100%;
+    height: 100vh;
+    transition: top 0.3s;
+
+    &__animated {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 270px;
+
+        @include mq(xxsmall) {
+            width: 295px;
+        }
+
+        @include mq(xsmall) {
+            width: 320px;
+        }
+
+        @include mq(desktop) {
+            width: 420px;
+        }
+        @include mq(desktop-large) {
+            width: 475px;
+        }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding-bottom: 5px;
+            line-height: 1;
+            font-size: 64px;
+            font-weight: 600;
+            background-color: $bg-color;
+            border-bottom: 3px solid $main-color;
+            animation: showName 0.5s 0.5s both;
+
+            &--animOut {
+                animation: hideName 0.3s 0.6s both;
+            }
+
+            @include mq(xxsmall) {
+                font-size: 68px;
+                padding-bottom: 7px;
+            }
+
+            @include mq(xsmall) {
+                font-size: 78px;
+            }
+
+            @include mq(desktop) {
+                font-size: 92px;
+            }
+            @include mq(desktop-large) {
+                font-size: 102px;
+            }
+
+            &-container {
+                width: 100%;
+                transform: translateY(100%);
+                animation: showTopText 1s 1.25s forwards;
+
+                &--animOut {
+                    animation: hideTopText 0.3s 0.3s both;
+                }
+            }
+
+            &-first,
+            &-last {
+                display: inline-block;
+            }
+            &-first {
+                color: $second-color;
+
+                &::after {
+                    content: "";
+                    display: block;
+                }
+
+            }
+
+            &-last {}
+        }
+
+        &-info {
+            overflow: hidden;
+            width: 100%;
+
+            &-span {
+                display: inline-block;
+                line-height: 1.5;
+                font-size: 34px;
+                font-weight: 300;
+                transform: translateY(100%);
+                animation: showBottomText 0.5s 2.25s forwards;
+
+                &--animOut {
+                    animation: hideBottomText 0.3s both;
+                }
+
+                @include mq(xxsmall) {
+                    font-size: 36px;
+                }
+
+                @include mq(xsmall) {
+                    font-size: 40px;
+                    line-height: 1.4;
+                }
+                @include mq(desktop) {
+                    font-size: 52px;
+                }
+
+                @include mq(desktop-large) {
+                    font-size: 58px;
+                }
+            }
+        }
+    }
+}

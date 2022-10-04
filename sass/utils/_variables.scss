@@ -1,0 +1,19 @@
+$main-color: white;
+$second-color: #54bcb1;
+$bg-color: #252525;
+
+$breakpoints: (xxsmall: '(min-width: 360px)',
+    xsmall: '(min-width: 410px)',
+    xsmall-horizontal: '(min-width: 410px) and (orientation: landscape)',
+    small: '(min-width: 640px)',
+    small-horizontal: '(min-width: 640px) and (orientation: landscape)',
+    medium: '(min-width: 768px)',
+    medium-vertical: '(min-width: 768px) and (orientation: portrait)',
+    medium-horizontal: '(min-width: 736px) and (orientation: landscape)',
+    mobile-horizontal: '(max-width: 920px) and (orientation: landscape)',
+    desktop: '(min-width: 1024px)',
+    desktop-small: '(min-width: 1280px)',
+    desktop-medium: '(min-width: 1400px)',
+    desktop-large: '(min-width: 1600px)',
+    desktop-fhd: '(min-width: 1920px)',
+    onlyPC: '(hover: hover) and (pointer: fine)');
