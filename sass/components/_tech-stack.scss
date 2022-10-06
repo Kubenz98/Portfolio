@@ -1,0 +1,63 @@
+.tech-stack {
+    width: 100%;
+    padding: $padding-sections;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 0 auto;
+        // max-width: 750px;
+        
+        @include mq(small) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &-set {
+            color: $dark-text;
+            background-color: $tile-bgc;
+            box-shadow: $custom-shadow;
+            border-radius: 5px;
+            text-align: center;
+
+            &-title {
+                padding: 15px;
+                font-size: 18px;
+                font-weight: 400;
+                // background-color: #fff;
+                color: #ffffff;
+                background-color: $second-color;
+                border-radius: 5px 5px 0 0;
+                text-transform: uppercase;
+
+                @include mq(xsmall) {
+                    font-size: 20px;
+                }
+
+                @include mq(medium) {
+                    font-size: 22px;
+                }
+            }
+
+            &-list {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 15px 0 15px;
+
+                &-item {
+                    margin: 5px;
+                    padding: 6px;
+                    text-align: center;
+                    font-size: 16px;
+                    border-radius: 10px;
+
+                    @include mq(xsmall) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

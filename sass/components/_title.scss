@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    color: $second-color;
+    margin: 20px 0;
+    font-size: 24px;
+
+    @include mq(xxsmall) {
+        font-size: 28px;
+    }
+    @include mq(xsmall) {
+        font-size: 32px;
+    }
+
+    @include mq(medium) {
+        font-size: 32px;
+    }
+}

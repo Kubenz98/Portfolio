@@ -6,9 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: poppins;
     color: $main-color;
-    background-color: $bg-color;
+    background-color: $main-color;
     width: 100%;
     height: 100vh;
     transition: top 0.3s;
@@ -43,8 +42,8 @@
             line-height: 1;
             font-size: 64px;
             font-weight: 600;
-            background-color: $bg-color;
-            border-bottom: 3px solid $main-color;
+            // background-color: $bg-color;
+            border-bottom: 3px solid $dark-text;
             animation: showName 0.5s 0.5s both;
 
             &--animOut {
@@ -91,7 +90,10 @@
 
             }
 
-            &-last {}
+            &-last {
+                color: $dark-text;
+            }
+
         }
 
         &-info {
@@ -104,6 +106,7 @@
                 font-size: 34px;
                 font-weight: 300;
                 transform: translateY(100%);
+                color: $dark-text;
                 animation: showBottomText 0.5s 2.25s forwards;
 
                 &--animOut {

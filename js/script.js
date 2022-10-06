@@ -14,8 +14,8 @@ const hideHeader = () => {
     allText.classList.add("header__animated-name--animOut");
 
     setTimeout(() => {
-        header.style.top = "100%";
-    }, 1000);
+        header.style.display = "none";
+    }, 1100);
 }
 
 headerButton.addEventListener("click", hideHeader);

@@ -3,10 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
     padding: 0 10px;
     overflow: hidden;
-
-    @include mq(xxsmall) {
-        padding: 0 20px;
-    }
+    background-color: $main-color;
 }
