@@ -4,6 +4,20 @@
     margin: 20px 0;
     font-size: 24px;
 
+    &__about {
+        @include hide;
+        &--active {
+            @include show;
+        }
+    }
+
+    &__tech-stack {
+        @include hide;
+        &--active {
+            @include show;
+        }
+    }
+
     @include mq(xxsmall) {
         font-size: 28px;
     }
@@ -12,6 +26,6 @@
     }
 
     @include mq(medium) {
-        font-size: 32px;
+        font-size: 34px;
     }
 }

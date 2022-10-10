@@ -3,13 +3,18 @@
     width: 100%;
 
     &__container {
-        background-color: $tile-bgc;
-        box-shadow: $custom-shadow;
+        background-color: $bg-text;
         border-radius: 5px;
+        @include hide;
+        transition: opacity 0.3s transform 0.5s;
+
+        &--active {
+            @include show;
+        }
     }
     &__text {
         max-width: 380px;
-        color: $dark-text;
+        color: $main-color;
         padding: 10px 15px;
         margin: 0 auto;
         border-radius: 5px;
@@ -19,7 +24,7 @@
         }
 
         @include mq(medium) {
-            font-size: 20px;
+            font-size: 21px;
         }
     }
 }
