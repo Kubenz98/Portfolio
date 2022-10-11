@@ -5,7 +5,8 @@ $bg-text: #555;
 $bg-title: #121212;
 $custom-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 $tile-bgc: #fff;
-$padding-sections: 10px;
+$padding-sections: 0 10px 30px;
+$padding-sections-medium: 0 10px 50px;
 
 $breakpoints: (xxsmall: '(min-width: 360px)',
     xsmall: '(min-width: 410px)',

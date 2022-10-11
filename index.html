@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrap">
-        <header class="header">
+        <header class="header" style="display: none;">
             <div class="header__animated">
                 <div class="header__animated-name">
                     <div class="header__animated-name-container">
@@ -29,15 +29,17 @@
                 <button class="button button-header">Show more</button>
         </header>
         <section class="about">
-            <h1 class="title title__about">Short info about me</h1>
-            <div class="about__container">
-            <p class="about__text">I'm passionate about creating websites and web apps. I'm coding since January 2022. I learn new things every day and it gives me a lot of fun.</p>
-        </div>
+            <h1 class="title title__about title__about--active">Short info about me</h1>
+            <div class="about__container about__container--active">
+                <p class="about__text">I'm passionate about creating websites and web apps. I have been coding since
+                    January
+                    2022. I learning new things every day and it gives me a lot of fun.</p>
+            </div>
         </section>
         <section class="tech-stack">
-            <h1 class="title title__tech-stack">Tech stack</h1>
+            <h1 class="title title__tech-stack title__tech-stack--active">Tech stack</h1>
             <div class="tech-stack__container">
-                <div class="tech-stack__container-set">
+                <div class="tech-stack__container-set tech-stack__container-set--active">
                     <h3 class="tech-stack__container-set-title">frontend</h3>
                     <ul class="tech-stack__container-set-list">
                         <li class="tech-stack__container-set-list-item">Html</li>
@@ -46,14 +48,14 @@
                         <li class="tech-stack__container-set-list-item">Ajax</li>
                     </ul>
                 </div>
-                <div class="tech-stack__container-set">
+                <div class="tech-stack__container-set tech-stack__container-set--active">
                     <h3 class="tech-stack__container-set-title">backend (basics)</h3>
                     <ul class="tech-stack__container-set-list">
                         <li class="tech-stack__container-set-list-item">PHP</li>
                         <li class="tech-stack__container-set-list-item">MySQL</li>
                     </ul>
                 </div>
-                <div class="tech-stack__container-set">
+                <div class="tech-stack__container-set tech-stack__container-set--active">
                     <h3 class="tech-stack__container-set-title">tools</h3>
                     <ul class="tech-stack__container-set-list">
                         <li class="tech-stack__container-set-list-item">Bem</li>
@@ -62,11 +64,52 @@
                         <li class="tech-stack__container-set-list-item">Webpack</li>
                     </ul>
                 </div>
-                <div class="tech-stack__container-set">
+                <div class="tech-stack__container-set tech-stack__container-set--active">
                     <h3 class="tech-stack__container-set-title">version control system</h3>
                     <ul class="tech-stack__container-set-list">
                         <li class="tech-stack__container-set-list-item">Git</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h1 class="title title__projects">Some of my projects</h1>
+            <div class="projects__container">
+                <div class="projects__container-item">
+                    <div class="projects__container-item-image">
+                        <img src="/img/cs400.png" alt="image" class="projects__container-item-image-img">
+                    </div>
+                    <h3 class="projects__container-item-title">Car-seb</h3>
+                    <p class="projects__container-item-description">Car service company website. Created with RWD rules,
+                        using the following technologies: HTML / CSS, SASS, Javascript, Google API and the BEM
+                        methodology.</p>
+                    <button class="button button-projects">
+                        <a href="https://www.car-seb.com/" class="button-projects-link" target="_blank">Check it out</a>
+                    </button>
+                </div>
+                <div class="projects__container-item">
+                    <div class="projects__container-item-image">
+                        <img src="/img/dogs400.png" alt="image" class="projects__container-item-image-img">
+                    </div>
+                    <h3 class="projects__container-item-title">Dogs</h3>
+                    <p class="projects__container-item-description">A library with more than hundred dog breeds. Just
+                        choose the breed and check all important informations about it. App created with AJAX.</p>
+                    <button class="button button-projects">
+                        <a href="https://kubenz98.github.io/Dogs/" class="button-projects-link" target="_blank">Check it
+                            out</a>
+                    </button>
+                </div>
+                <div class="projects__container-item">
+                    <div class="projects__container-item-image">
+                        <img src="/img/tictactoe400.png" alt="image" class="projects__container-item-image-img">
+                    </div>
+                    <h3 class="projects__container-item-title">Tic tac toe</h3>
+                    <p class="projects__container-item-description">A simple game for two players on one device. Created
+                        with Javascript. </p>
+                    <button class="button button-projects">
+                        <a href="https://kubenz98.github.io/tic-tac-toe/" class="button-projects-link"
+                            target="_blank">Check it out</a>
+                    </button>
                 </div>
             </div>
         </section>

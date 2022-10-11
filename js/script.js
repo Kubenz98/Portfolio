@@ -20,9 +20,6 @@ const hideHeader = () => {
         header.style.display = "none";
     }, 1100);
 }
-
-            // ZMIENIĆ NAZWY NA ACTIVE I DISABLED ALBO COŚ
-            //DAC OPOZNIENIE
 const showContent = () => {
     setTimeout(() => {
         aboutTitle.classList.add("title__about--active");

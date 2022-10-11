@@ -39,4 +39,23 @@
             font-size: 28px;
         }
     }
+
+    &-projects {
+        background-color: transparent;
+        &-link {
+            color: $second-color;
+            transition: 0.3s;
+            @include mq(onlyPC) {
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+        @include mq(onlyPC) {
+            &:hover {
+                color: $main-color;
+                background-color: transparent;
+            }
+        }
+    }
 }

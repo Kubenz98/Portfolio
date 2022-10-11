@@ -11,14 +11,16 @@
         @include mq(small) {
             grid-template-columns: 1fr 1fr;
         }
+        @include mq(medium) {
+            gap: 40px;
+        }
 
         &-set {
             color: $main-color;
-
-            // background-color: $bg-text;
-            background-color: transparent;
+            // background-color: transparent;
+            background-color: #333;
             border-radius: 5px;
-            border: 0.3px solid white;
+            // border: 0.3px solid white;
             text-align: center;
             @include hide;
 
@@ -30,10 +32,12 @@
                 padding: 15px;
                 font-size: 18px;
                 font-weight: 500;
-                color: $second-color;
-                background-color: transparent;
+                // color: $second-color;
+                color: white;
+                // background-color: transparent;
+                background-color: $bg-text;
                 border-radius: 5px 5px 0 0;
-                border-bottom:  0.3px solid white;
+                // border-bottom:  0.3px solid white;
                 text-transform: uppercase;
 
                 @include mq(xsmall) {
