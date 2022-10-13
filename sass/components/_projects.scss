@@ -19,13 +19,15 @@
             max-width: 482px;
             padding: 30px 15px 15px;
             border-radius: 5px;
-            background-color: #333;
+            background-color: $bg-container;
 
             &-image {
                 width: 220px;
                 @include mq(xsmall) {
                     width: 250px;
                 }
+
+                
 
                 &-img {
                     width: 100%;

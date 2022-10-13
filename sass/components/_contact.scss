@@ -1,0 +1,59 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: $padding-sections;
+
+    @include mq(medium) {
+        padding: $padding-sections-medium;
+    }
+    &__form {
+        padding: 15px;
+        margin: 0 auto;
+        width: 100%;
+        background-color: $bg-container;
+        border-radius: 3px;
+        @include mq(medium) {
+            padding: 30px;
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        &-title {
+            width: 100%;
+            margin-bottom: 5px;
+            color: $main-color;
+            font-weight: 400;
+            @include mq(medium) {
+                font-size: 22px;
+            }
+        }
+        &-input {
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: $bg-text;
+            color: $main-color;
+            border: none;
+            border-radius: 3px;
+            font-size: 28px;
+            &:focus-visible {
+                background-color: #252525;
+                color: $second-color;
+                outline: none;
+                transition: 0.3s;
+            }
+            @include mq(xsmall) {
+                font-size: 32px;
+            }
+            @include mq(medium) {
+                // width: 600px;
+                // margin: 0 auto;
+            }
+        }
+    }
+}

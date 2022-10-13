@@ -1,0 +1,14 @@
+.footer {
+    width: 100%;
+    padding: 10px;
+    &__text {
+        padding-top: 10px;
+        text-align: center;
+        color: $main-color;
+        border-top: 1px solid $bg-text;
+
+        @include mq(medium) {
+            font-size: 18px;
+        }
+    }
+}

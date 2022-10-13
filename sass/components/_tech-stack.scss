@@ -17,10 +17,8 @@
 
         &-set {
             color: $main-color;
-            // background-color: transparent;
-            background-color: #333;
+            background-color: $bg-container;
             border-radius: 5px;
-            // border: 0.3px solid white;
             text-align: center;
             @include hide;
 
@@ -32,12 +30,9 @@
                 padding: 15px;
                 font-size: 18px;
                 font-weight: 500;
-                // color: $second-color;
                 color: white;
-                // background-color: transparent;
                 background-color: $bg-text;
                 border-radius: 5px 5px 0 0;
-                // border-bottom:  0.3px solid white;
                 text-transform: uppercase;
 
                 @include mq(xsmall) {
@@ -61,7 +56,7 @@
                     padding: 6px;
                     text-align: center;
                     font-size: 16px;
-                    border-radius: 10px;
+                    border-radius: 5px;
 
                     @include mq(xsmall) {
                         font-size: 18px;
