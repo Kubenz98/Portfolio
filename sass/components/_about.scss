@@ -1,8 +1,10 @@
 .about {
     padding: $padding-sections;
+    padding-top: 50px;
     width: 100%;
     @include mq(medium) {
         padding: $padding-sections-medium;
+        padding-top: 50px;
     }
 
     &__container {
