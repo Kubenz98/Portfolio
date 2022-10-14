@@ -1,14 +1,22 @@
 .projects {
     padding: $padding-sections;
     width: 100%;
-}
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: transform 0.5s, opacity 0.3s;
 
+    &--active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .glide {
     &__track {
         background-color: $bg-container;
-
     }
-
     &__slides {}
 
     &__slide {
@@ -18,8 +26,8 @@
         padding: 30px 15px 15px;
         border-radius: 5px;
         font-size: 30px;
-        
-                &-item {
+
+        &-item {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,6 +48,7 @@
                 color: $second-color;
                 font-size: 22px;
                 font-weight: 500;
+                
             }
 
             &-description {
@@ -50,7 +59,7 @@
             }
         }
 
-        
+
     }
 
     &__arrows {
@@ -65,7 +74,7 @@
         }
 
         @include mq(xsmall) {
-                top: 58%;
+            top: 58%;
         }
 
         @include mq(medium) {

@@ -18,6 +18,13 @@
         }
     }
 
+    &__projects {
+        @include hide;
+        &--active {
+            @include show;
+        }
+    }
+
     @include mq(xxsmall) {
         font-size: 28px;
     }
