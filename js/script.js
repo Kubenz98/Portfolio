@@ -36,3 +36,7 @@ const showContent = () => {
 
 headerButton.addEventListener("click", hideHeader);
 headerButton.addEventListener("click", showContent);
+
+// import Glide from '../node_modules/@glidejs/glide';
+
+// new Glide('.glide').mount();

@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74e6b67c69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -74,42 +75,58 @@
         </section>
         <section class="projects">
             <h1 class="title title__projects">Some of my projects</h1>
-            <div class="projects__container">
-                <div class="projects__container-item">
-                    <div class="projects__container-item-image">
-                        <img src="/img/cs400.png" alt="image" class="projects__container-item-image-img">
-                    </div>
-                    <h3 class="projects__container-item-title">Car-seb</h3>
-                    <p class="projects__container-item-description">Car service company website. Created with RWD rules,
-                        using the following technologies: HTML / CSS, SASS, Javascript, Google API and the BEM
-                        methodology.</p>
-                    <button class="button button-projects">
-                        <a href="https://www.car-seb.com/" class="button-projects-link" target="_blank">Check it out</a>
-                    </button>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="glide__slide-item-image">
+                                <img src="/img/cs400.png" alt="image" class="glide__slide-item-image-img">
+                            </div>
+                            <h3 class="glide__slide-item-title">Car-seb</h3>
+                            <p class="glide__slide-item-description">A car service company website. Created with
+                                RWD rules,
+                                using the following technologies: HTML / CSS, SASS, Javascript, Google API and the BEM
+                                methodology.</p>
+                            <button class="button button-projects">
+                                <a href="https://www.car-seb.com/" class="button-projects-link" target="_blank">Check it
+                                    out</a>
+                            </button>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="glide__slide-item-image">
+                                <img src="/img/dogs400.png" alt="image" class="glide__slide-item-image-img">
+                            </div>
+                            <h3 class="glide__slide-item-title">Dogs</h3>
+                            <p class="glide__slide-item-description">A library with more than hundred dog breeds.
+                                Just
+                                choose the breed and check all important informations about it. App created with AJAX.
+                            </p>
+                            <button class="button button-projects">
+                                <a href="https://kubenz98.github.io/Dogs/" class="button-projects-link"
+                                    target="_blank">Check it
+                                    out</a>
+                            </button>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="projects__container-item-image">
+                                <img src="/img/tictactoe400.png" alt="image" class="glide__slide-item-image-img">
+                            </div>
+                            <h3 class="glide__slide-item-title">Tic tac toe</h3>
+                            <p class="glide__slide-item-description">A simple game for two players on one device.
+                                Created
+                                with Javascript. </p>
+                            <button class="button button-projects">
+                                <a href="https://kubenz98.github.io/tic-tac-toe/" class="button-projects-link"
+                                    target="_blank">Check it out</a>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="projects__container-item">
-                    <div class="projects__container-item-image">
-                        <img src="/img/dogs400.png" alt="image" class="projects__container-item-image-img">
-                    </div>
-                    <h3 class="projects__container-item-title">Dogs</h3>
-                    <p class="projects__container-item-description">A library with more than hundred dog breeds. Just
-                        choose the breed and check all important informations about it. App created with AJAX.</p>
-                    <button class="button button-projects">
-                        <a href="https://kubenz98.github.io/Dogs/" class="button-projects-link" target="_blank">Check it
-                            out</a>
-                    </button>
-                </div>
-                <div class="projects__container-item">
-                    <div class="projects__container-item-image">
-                        <img src="/img/tictactoe400.png" alt="image" class="projects__container-item-image-img">
-                    </div>
-                    <h3 class="projects__container-item-title">Tic tac toe</h3>
-                    <p class="projects__container-item-description">A simple game for two players on one device. Created
-                        with Javascript. </p>
-                    <button class="button button-projects">
-                        <a href="https://kubenz98.github.io/tic-tac-toe/" class="button-projects-link"
-                            target="_blank">Check it out</a>
-                    </button>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fa-solid fa-angle-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fa-solid fa-angle-right"></i></button>
                 </div>
             </div>
         </section>
@@ -135,6 +152,15 @@
             </p>
         </footer>
     </div>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'slider',
+            startAt: 0,
+            perView: 1,
+            focusAt: 0,
+        }).mount()
+    </script>
     <script src="js/script.js"></script>
 </body>
 

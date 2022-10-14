@@ -1,18 +1,25 @@
 .projects {
     padding: $padding-sections;
+    width: 100%;
+}
 
-    &__container {
+.glide {
+    &__track {
+        background-color: $bg-container;
+
+    }
+
+    &__slides {}
+
+    &__slide {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-
-        @include mq(medium) {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        &-item {
+        padding: 30px 15px 15px;
+        border-radius: 5px;
+        font-size: 30px;
+        
+                &-item {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -22,13 +29,6 @@
             background-color: $bg-container;
 
             &-image {
-                width: 220px;
-                @include mq(xsmall) {
-                    width: 250px;
-                }
-
-                
-
                 &-img {
                     width: 100%;
                     border: 0.3px solid rgb(189, 189, 189);
@@ -43,8 +43,73 @@
             }
 
             &-description {
+                max-width: 500px;
                 color: $main-color;
                 text-align: center;
+                font-size: 16px;
+            }
+        }
+
+        
+    }
+
+    &__arrows {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+
+        @include mq(xxsmall) {
+            top: 50%;
+        }
+
+        @include mq(xsmall) {
+                top: 58%;
+        }
+
+        @include mq(medium) {
+            top: 50%;
+        }
+    }
+
+    &__arrow {
+        padding: 10px;
+        color: white;
+        background-color: #555;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        opacity: 0.6;
+        cursor: pointer;
+
+        @include mq(xsmall) {
+            font-size: 30px;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &--left {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+
+            @include mq(medium) {
+                left: 20px;
+            }
+        }
+
+        &--right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            @include mq(medium) {
+                right: 20px;
             }
         }
     }
