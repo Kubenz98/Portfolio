@@ -51,9 +51,10 @@
                 font-size: 32px;
             }
             @include mq(medium) {
-                // width: 600px;
-                // margin: 0 auto;
             }
+        }
+        &-message {
+            color: $main-color;
         }
     }
 }
