@@ -4,6 +4,12 @@
     width: 100%;
     padding: $padding-sections;
 
+    @include hide;
+
+    &--active {
+        @include show;
+    }
+
     @include mq(medium) {
         padding: $padding-sections-medium;
     }

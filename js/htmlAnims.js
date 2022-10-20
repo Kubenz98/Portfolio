@@ -14,8 +14,11 @@ const techStackTitle = document.querySelector(".title__tech-stack");
 const techStackContent = document.querySelectorAll(".tech-stack__container-set");
 const projectsTitle = document.querySelector(".title__projects");
 const projects = document.querySelector(".projects");
+const contact = document.querySelector(".contact");
+const footer = document.querySelector(".footer");
 
 export const hideHeader = () => {
+    window.scrollTo(0, 0);
     headerButton.classList.add("button-header--animOut");
     bottomText.classList.add("header__animated-info-span--animOut");
     topText.classList.add("header__animated-name-container--animOut");
@@ -44,5 +47,11 @@ export const showContent = () => {
         setTimeout(() => {
             projects.classList.add("projects--active");
         }, 300);
+        setTimeout(() => {
+            contact.classList.add("contact--active");
+        }, 350)
+        setTimeout(() => {
+            footer.classList.add("footer--active");
+        }, 400)
     }, 1200)
 }

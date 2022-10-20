@@ -1,6 +1,11 @@
 .footer {
     width: 100%;
     padding: 10px;
+    @include hide;
+
+    &--active {
+        @include show;
+    }
     &__text {
         padding-top: 10px;
         text-align: center;
