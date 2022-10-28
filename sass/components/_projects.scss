@@ -70,11 +70,11 @@
         transform: translateY(-50%);
 
         @include mq(xxsmall) {
-            top: 50%;
+            top: 40%;
         }
 
         @include mq(xsmall) {
-            top: 58%;
+            top: 42%;
         }
 
         @include mq(medium) {
