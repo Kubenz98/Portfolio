@@ -53,5 +53,5 @@ export const showContent = () => {
         setTimeout(() => {
             footer.classList.add("footer--active");
         }, 400)
-    }, 1200)
+    }, 800)
 }
